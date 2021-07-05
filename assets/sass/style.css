@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* global css start*/
+.page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.m0 {
+  margin: 0;
+}
+
+.p0 {
+  padding: 0;
+}
+
+.mr-20 {
+  margin-right: 20px;
+}
+
+@media all and (min-width: 993px) {
+  .hide_dekstop {
+    display: none !important;
+  }
+}
+
+@media all and (max-width: 992px) {
+  .hide_mobil {
+    display: none !important;
+  }
+}
+
+/* global css end*/
+header .main-header {
+  position: relative;
+}
+
+header .main-header .header-desktop {
+  z-index: 120;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 10px;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  header .main-header .header-desktop {
+    font-size: 14px;
+  }
+}
+
+header .main-header .header-desktop figure.logo {
+  width: 120px;
+  height: 40px;
+}
+
+header .main-header .header-desktop figure.logo .logo-image {
+  width: 100%;
+  height: 100%;
+}
+
+header .main-header .header-desktop .categories {
+  color: #3c3b37;
+}
+
+header .main-header .header-desktop .form__block {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+header .main-header .header-desktop .form__block form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+}
+
+header .main-header .header-desktop .form__block form button, header .main-header .header-desktop .form__block form input {
+  border: none;
+  background: none;
+  outline: none;
+  padding: 10px;
+}
+
+header .main-header .header-desktop .form__block form button.search__btn, header .main-header .header-desktop .form__block form input.search__btn {
+  padding: 15px 20px;
+}
+
+header .main-header .header-desktop .form__block form button.search__btn i, header .main-header .header-desktop .form__block form input.search__btn i {
+  font-size: 18px;
+}
+
+header .main-header .header-desktop .form__block form button.input, header .main-header .header-desktop .form__block form input.input {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+header .main-header .header-desktop nav.header_nav ul.nav_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .main-header .header-desktop nav.header_nav ul.nav_list li {
+  margin-right: 20px;
+}
+
+header .main-header .header-desktop nav.header_nav ul.nav_list li a {
+  display: block;
+  color: #3c3b37;
+  white-space: nowrap;
+}
+
+header .main-header .header-desktop .header_button_block a.button-item {
+  border: 1px solid;
+  padding: 10px 19px;
+  border-radius: 4px;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  header .main-header .header-desktop .header_button_block a.button-item {
+    padding: 10px 9px;
+  }
+}
+
+header .main-header .header-desktop .header_button_block a.button-item.login {
+  color: #0f7c90;
+}
+
+header .main-header .header-desktop .header_button_block a.button-item.login:hover {
+  color: #094c59;
+}
+
+header .main-header .header-desktop .header_button_block a.button-item.signup {
+  color: #fff;
+  background-color: #0f7c90;
+}
+
+header .main-header .header-desktop .header_button_block a.button-item.signup:hover {
+  background-color: #1c6a78;
+}
+
+header .main-header .header-desktop .header_button_block a.button-item.lang {
+  color: #3c3b37;
+  border-color: #3c3b37;
+}
+
+header .main-header .header-desktop .header_button_block a.button-item:not(:last-child) {
+  border-color: #0f7c90;
+}
+
+header .main-header .header-desktop .header_button_block a.button-item:not(:last-child):hover, header .main-header .header-desktop .header_button_block a.button-item:not(:last-child):visited, header .main-header .header-desktop .header_button_block a.button-item:not(:last-child):active, header .main-header .header-desktop .header_button_block a.button-item:not(:last-child):focus {
+  border-color: #1c6a78;
+}
+
+header .mobil_menu .mobil_menu-block {
+  position: absolute;
+  z-index: 10;
+  left: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+header .mobil_menu .menu_list {
+  width: 100%;
+  background: #fff;
+  padding: 10px;
+}
+
+header .mobil_menu .menu_list li a {
+  display: block;
+  padding: 10px 0px;
+  white-space: nowrap;
+}
+
+header .mobil_menu .menu_list li:not(:last-child) a {
+  border-bottom: 1px solid #ccc;
+}
+
+header .mobil_menu input:checked + .mobil_menu-block {
+  left: 0;
+  width: 100%;
+}
+
+.home-page #slide_block .section_content {
+  position: relative;
+}
+
+.home-page #slide_block .section_content .section_image img {
+  width: 100%;
+}
+
+.home-page #slide_block .section_content .caption_block {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  max-width: 400px;
+  background: #fff;
+  padding: 30px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home-page #slide_block .section_content .caption_block h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.home-page #slide_block .section_content .caption_block p {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.home-page #slide_block .section_content .caption_block form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.home-page #slide_block .section_content .caption_block form button.srch_btn, .home-page #slide_block .section_content .caption_block form input.srch {
+  padding: 15px 20px;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.home-page #slide_block .section_content .caption_block form .srch {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.home-page #slide_block .section_content .caption_block form .srch_btn i {
+  font-size: 18px;
+}
+/*# sourceMappingURL=style.css.map */
